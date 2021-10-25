@@ -81,8 +81,16 @@ console.log(calcFinalPrice(50, 10, .06))
 /*
 TEXT ANSWER
 I would create a customer address object. Since this restaurant handles online orders it will need the customer address for delivery orders. I'd chose the properties 
-of name, street info, city, state, and zip code. Separating the parts of a customer delivery address into these properties could help estimate customers in
-certain delivery regions, for example.
+of name, street info, city, state, and zip code. Separating the parts of a customer delivery address into these properties could help estimate the number of customers in
+certain delivery regions, for example. The restaurant could also save this info for later use and make online ordering faster.
+
+I would make all values strings except for zip code since all other values contain letters.
+
+name: string
+streetInfo: string
+city: string
+state: string
+zip: number
 
 */
 
@@ -96,7 +104,7 @@ const customerAddress = {
     streetInfo: "1234 Dog Way",
     city: "East Lansing",
     state: "MI",
-    zip: "48824"
+    zip: 48824
 }
 
 console.log(customerAddress)
